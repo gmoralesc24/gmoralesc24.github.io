@@ -191,20 +191,31 @@ a {
     width: 35%;
     display: flex;
     justify-content: center;
+    perspective: 1000px;
+}
+
+.hero-image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transition: transform 0.1s ease-out;
 }
 
 .hero-image {
-    width: 380px;
+    width: 100%;
+    max-width: 350px;
     height: auto;
     object-fit: contain;
     animation: float 6s ease-in-out infinite;
     filter: drop-shadow(0 0 30px rgba(139, 92, 246, 0.4));
+    transform: translateZ(30px);
 }
 
 @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0px); }
+    0% { transform: translateZ(30px) translateY(0px); }
+    50% { transform: translateZ(30px) translateY(-20px); }
+    100% { transform: translateZ(30px) translateY(0px); }
 }
 
 /* Skills Section */
@@ -361,6 +372,59 @@ a {
 
 .project-link:hover {
     color: var(--accent-primary);
+}
+
+/* Timeline Styles */
+.timeline-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 25px;
+    top: 5px;
+    bottom: 5px;
+    width: 2px;
+    background: var(--glass-border);
+}
+
+.timeline-item {
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+    position: relative;
+}
+
+.timeline-dot {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--bg-primary);
+    border: 3px solid var(--accent-primary);
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+    flex-shrink: 0;
+    z-index: 1;
+    margin-top: 15px; /* aligns with card context */
+    position: relative;
+    left: -8px;
+}
+
+.timeline-content {
+    flex-grow: 1;
+}
+
+.timeline-subtitle {
+    color: var(--accent-secondary) !important;
+    font-weight: 600;
+    margin-bottom: 0.8rem !important;
+    font-size: 0.95rem !important;
 }
 
 /* Footer */

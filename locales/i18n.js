@@ -1,6 +1,8 @@
 export const translations = {
     en: {
         nav_home: "Home",
+        nav_experience: "Experience",
+        nav_education: "Education",
         nav_skills: "Skills",
         nav_projects: "Projects",
         nav_contact: "Contact",
@@ -10,6 +12,8 @@ export const translations = {
         btn_github: "GitHub Profile",
         btn_cv: "Download CV",
         skills_title: "Technical Skills",
+        experience_title: "Professional Experience",
+        education_title: "Education",
         projects_title: "Featured Projects",
         filter_all: "All",
         filter_ai: "AI & ML",
@@ -19,6 +23,8 @@ export const translations = {
     },
     es: {
         nav_home: "Inicio",
+        nav_experience: "Experiencia",
+        nav_education: "Educación",
         nav_skills: "Habilidades",
         nav_projects: "Proyectos",
         nav_contact: "Contacto",
@@ -28,6 +34,8 @@ export const translations = {
         btn_github: "Perfil de GitHub",
         btn_cv: "Descargar CV",
         skills_title: "Habilidades Técnicas",
+        experience_title: "Experiencia Profesional",
+        education_title: "Educación",
         projects_title: "Proyectos Destacados",
         filter_all: "Todos",
         filter_ai: "IA y ML",

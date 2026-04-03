@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3. Setup Listeners
     setupLanguageToggle();
     setupFilters();
+    setup3DTilt();
 });
 
 function setupLanguageToggle() {
@@ -108,5 +109,27 @@ function setupFilters() {
             const filter = e.target.dataset.filter;
             renderProjects(filter);
         });
+    });
+}
+
+function setup3DTilt() {
+    const wrapper = document.querySelector('.hero-image-wrapper');
+    const heroSection = document.getElementById('home');
+    if(!wrapper || !heroSection) return;
+
+    heroSection.addEventListener('mousemove', (e) => {
+        const { left, top, width, height } = heroSection.getBoundingClientRect();
+        const x = (e.clientX - left) / width - 0.5;
+        const y = (e.clientY - top) / height - 0.5;
+        
+        // Tilt bounds: roughly +/- 20 degrees based on distance
+        const tiltX = -y * 30; 
+        const tiltY = x * 30;
+        
+        wrapper.style.transform = `rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+    });
+
+    heroSection.addEventListener('mouseleave', () => {
+        wrapper.style.transform = `rotateX(0deg) rotateY(0deg)`;
     });
 }
