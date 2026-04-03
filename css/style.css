@@ -193,23 +193,18 @@ a {
     justify-content: center;
 }
 
-.blob {
-    width: 300px;
-    height: 300px;
-    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
-    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
-    animation: morph 8s ease-in-out infinite, pulse 4s ease-in-out infinite alternate;
-    box-shadow: 0 0 50px rgba(139, 92, 246, 0.5);
+.hero-image {
+    width: 380px;
+    height: auto;
+    object-fit: contain;
+    animation: float 6s ease-in-out infinite;
+    filter: drop-shadow(0 0 30px rgba(139, 92, 246, 0.4));
 }
 
-@keyframes morph {
-    0%, 100% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
-    34% { border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%; }
-    67% { border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%; }
-}
-@keyframes pulse {
-    from { transform: scale(0.9); opacity: 0.8; }
-    to { transform: scale(1.1); opacity: 1; }
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
 }
 
 /* Skills Section */
