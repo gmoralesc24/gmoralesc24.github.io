@@ -71,6 +71,9 @@ export const skillsData = [
     { name: "Python / Data Science", value: 90 },
     { name: "Machine Learning (XGBoost, TF, PyTorch)", value: 85 },
     { name: "LLM & RAG Systems", value: 80 },
+    { name: "Análisis de Datos / Data Analysis", value: 85 },
+    { name: "Análisis Funcional / Functional Analysis", value: 85 },
+    { name: "Gestión de Proyectos TI / Project Management", value: 80 },
     { name: "MLOps & Data Engineering", value: 75 },
     { name: "Web Development (HTML, JS, CSS)", value: 70 }
 ];

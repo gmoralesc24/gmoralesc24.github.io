@@ -427,6 +427,42 @@ a {
     font-size: 0.95rem !important;
 }
 
+/* Social Icons Section */
+.social-links-bar {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--text-muted);
+    transition: var(--transition);
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    color: var(--text-main);
+    border-color: var(--accent-primary);
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+}
+
+/* Specific SVG states on hover */
+.social-icon[title="LinkedIn"]:hover { background: #0077b5; border-color: #0077b5; }
+.social-icon[title="X (Twitter)"]:hover { background: #14171A; border-color: #14171A; }
+.social-icon[title="YouTube"]:hover { background: #FF0000; border-color: #FF0000; }
+.social-icon[title="Instagram"]:hover { background: #E1306C; border-color: #E1306C; }
+.social-icon[title="Email"]:hover { background: #D44638; border-color: #D44638; }
+.social-icon[title="WhatsApp"]:hover { background: #25D366; border-color: #25D366; }
+
 /* Footer */
 footer {
     text-align: center;
