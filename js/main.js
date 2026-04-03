@@ -22,7 +22,7 @@ function setupLanguageToggle() {
     const langBtn = document.getElementById('lang-toggle');
     langBtn.addEventListener('click', () => {
         currentLang = currentLang === 'es' ? 'en' : 'es';
-        langBtn.textContent = currentLang === 'es' ? '🇺🇸 EN' : '🇪🇸 ES';
+        langBtn.innerHTML = currentLang === 'es' ? '🌐 Español (ES)' : '🌐 English (EN)';
         updateTranslations();
         renderProjects(document.querySelector('.filter-btn.active').dataset.filter); // Re-render projects in new lang
     });
@@ -35,7 +35,7 @@ function updateTranslations() {
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (t[key]) {
-            el.textContent = t[key];
+            el.innerHTML = t[key];
         }
     });
 

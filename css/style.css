@@ -114,19 +114,23 @@ a {
 }
 
 .lang-btn {
-    background: transparent;
-    border: 1px solid var(--glass-border);
+    background: linear-gradient(90deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
+    border: 1px solid var(--accent-primary);
     color: var(--text-main);
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 8px 16px;
+    border-radius: 20px;
     cursor: pointer;
     transition: var(--transition);
     font-family: inherit;
     font-weight: 600;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.1);
 }
 
 .lang-btn:hover {
-    background: var(--glass-border);
+    background: var(--accent-primary);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.5);
+    border-color: var(--accent-primary);
+    transform: translateY(-2px);
 }
 
 /* Hero Section */

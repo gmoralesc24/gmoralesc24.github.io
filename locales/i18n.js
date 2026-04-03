@@ -20,7 +20,32 @@ export const translations = {
         filter_ai: "AI & ML",
         filter_data: "Data Science & MLOps",
         filter_web: "Web & Others",
-        footer_text: "Built with passion and Vanilla JS. "
+        footer_text: "Built with passion and Vanilla JS. ",
+        
+        // Experience
+        exp0_title: "Machine Learning Engineer",
+        exp0_sub: "Anyone AI | Present",
+        exp0_desc: "Development and implementation of machine learning models and advanced Artificial Intelligence solutions.",
+        exp1_title: "Systems Engineer / Multiple IT Roles",
+        exp1_sub: "+7 years combined experience",
+        exp1_desc: "I have held key roles such as <strong>Data Analyst, Systems Analyst, Software Engineer, Programmer and IT Project Manager</strong> across various initiatives:",
+        exp1_li1: "<strong>Number Portability:</strong> Implementation and analysis of systems for massive data flows in telecommunications.",
+        exp1_li2: "<strong>Comptroller General (CGR):</strong> Optimization in Control Services and IT architecture.",
+        exp1_li3: "<strong>Judiciary (Non-Penal EJE):</strong> Modernization of workflows and development of the electronic judicial backend.",
+        exp2_title: "AI and Academic Consultant & Advisor",
+        exp2_sub: "Independent Consultancy",
+        exp2_desc: "Specialized advisory in IT projects, use of technological tools, and development & implementation alongside training in Systems and Artificial Intelligence.",
+        
+        // Education
+        edu1_title: "Master in Artificial Intelligence",
+        edu1_sub: "National University of Engineering (UNI) | In Progress",
+        edu1_desc: "Advanced training in the development and application of cutting-edge algorithms and technologies in Artificial Intelligence.",
+        edu2_title: "Project Management & Innovative Leadership Specialization",
+        edu2_sub: "Aprende y Prospera (Volunteering)",
+        edu2_desc: "Application of agile methodologies, innovative leadership, and strategic management oriented to technological projects.",
+        edu3_title: "Bachelor in Systems Engineering",
+        edu3_sub: "National University of Engineering (UNI)",
+        edu3_desc: "Solid technical, analytical, and methodological foundation in systems engineering obtained at one of the country's top universities."
     },
     es: {
         nav_home: "Inicio",
@@ -43,6 +68,31 @@ export const translations = {
         filter_ai: "IA y ML",
         filter_data: "Data Science y MLOps",
         filter_web: "Web y Otros",
-        footer_text: "Construido con pasión y Vanilla JS. "
+        footer_text: "Construido con pasión y Vanilla JS. ",
+        
+        // Experience
+        exp0_title: "Machine Learning Engineer",
+        exp0_sub: "Anyone AI | Actualidad",
+        exp0_desc: "Desarrollo e implementación de modelos de aprendizaje automático y soluciones avanzadas de Inteligencia Artificial.",
+        exp1_title: "Ingeniero de Sistemas / Múltiples Roles TI",
+        exp1_sub: "+7 años de experiencia conjunta",
+        exp1_desc: "He desempeñado roles clave como <strong>Analista de Datos, Analista de Sistemas, Software Engineer, Programador y Gestor de Proyectos de TI</strong> en diversas iniciativas:",
+        exp1_li1: "<strong>Portabilidad Numérica:</strong> Implementación y análisis de sistemas para flujos masivos de datos en telecomunicaciones.",
+        exp1_li2: "<strong>Contraloría General de la República (CGR):</strong> Optimización en Servicios de Control y arquitectura TI.",
+        exp1_li3: "<strong>Poder Judicial (EJE No Penal):</strong> Modernización del flujo de trabajo y desarrollo del expediente judicial electrónico.",
+        exp2_title: "Asesor y Consultor académico y de IA",
+        exp2_sub: "Consultoría Independiente",
+        exp2_desc: "Asesoría especializada en proyectos de TI, uso de herramientas tecnológicas, y desarrollo e implementación además de capacitación en Sistemas e Inteligencia Artificial.",
+        
+        // Education
+        edu1_title: "Maestría en Inteligencia Artificial",
+        edu1_sub: "Universidad Nacional de Ingeniería (UNI) | En curso",
+        edu1_desc: "Formación avanzada en el desarrollo y aplicación de algoritmos y tecnologías de vanguardia en Inteligencia Artificial.",
+        edu2_title: "Especialización en Project Management & Innovative Leadership",
+        edu2_sub: "Aprende y Prospera (Voluntariado)",
+        edu2_desc: "Aplicación de metodologías ágiles, liderazgo innovador y gerencia estratégica orientada a proyectos tecnológicos.",
+        edu3_title: "Bachiller en Ingeniería de Sistemas",
+        edu3_sub: "Universidad Nacional de Ingeniería (UNI)",
+        edu3_desc: "Sólida base técnica, analítica y metodológica en ingeniería de sistemas obtenida en una de las mejores universidades del país."
     }
 };
